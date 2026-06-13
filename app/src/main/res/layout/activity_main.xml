@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"
+        android:contentDescription="background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AUTO DRAW VIP"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#7c6bff"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:shadowColor="#7c6bff"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="12"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tool By @AUTODRAWBUILDA"
+                android:textSize="12sp"
+                android:textColor="#8a8d9e"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Độ chi tiết nét vẽ (Kéo thấp sẽ ít lag):"
+                android:textColor="#e8e9f0"
+                android:textSize="13sp"
+                android:layout_marginBottom="6dp"/>
+
+            <SeekBar
+                android:id="@+id/seekDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                android:progressTint="#7c6bff"
+                android:thumbTint="#7c6bff"/>
+
+            <TextView
+                android:id="@+id/tvDetailVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nét vẽ: 50"
+                android:textColor="#7c6bff"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnChooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="1. Chọn ảnh cần vẽ"
+                android:textColor="#ffffff"
+                android:backgroundTint="#7c6bff"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnOverlayPerm"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:text="2. Cấp quyền cửa sổ nổi"
+                android:textColor="#ffffff"
+                android:backgroundTint="#2a2d38"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnAccessibility"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:text="3. Bật Accessibility Service"
+                android:textColor="#ffffff"
+                android:backgroundTint="#2a2d38"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnOpenMenu"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:text="4. MỞ MENU VẼ ▶"
+                android:textColor="#ffffff"
+                android:backgroundTint="#22c55e"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvImageInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vui lòng chọn ảnh để bắt đầu"
+                android:textColor="#8a8d9e"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/imgPreview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:layout_marginTop="8dp"
+                android:background="#1a1e2028"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
